@@ -13,6 +13,8 @@ body {
     font-family: 'Roboto';
     font-size: 15px;
     color: #333333;
+
+    /* overflow-x: hidden; */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -176,4 +178,81 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 100%;
     margin-top: 12px;
 
+}
+
+/* about us */
+
+.about_us {
+    width: 100%;
+    min-height: 1330px;
+    /* padding: 100px 0; */
+    background-color: #1d1d1d;
+    position: relative;
+}
+
+.white_line {
+    background-color: #fff;
+    width: 5px;
+    height: 100%;
+    top: 0;
+}
+
+.sm_circle {
+    width: 24px;
+    height: 24px;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color: #1d1d1d;
+}
+
+.lg_circle {
+    width: 48px;
+    height: 48px;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color: #1d1d1d;
+}
+
+.sm_circle--first {
+    top: 162px;
+}
+
+.sm_circle--second {
+    top: 285px;
+}
+
+.sm_circle--third {
+    top: 758px;
+}
+
+.lg_circle--first {
+    top: 528px;
+}
+
+.vertical_line {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about_us_info {
+    max-width: 400px;
+    position: absolute;
+}
+
+.about_us_info_year {
+    display: flex;
+    justify-content: end;
+    color: #fff;
+    font-size: 48px;
+    font-family: 'Roboto';
+    line-height: .8;
+    margin-right: 40px;
+}
+
+.about_us_info_title {
+    color: #b7b7b7;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
 }
