@@ -213,21 +213,26 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #1d1d1d;
 }
 
-.sm_circle--first {
-    top: 162px;
+.first_year {
+    /* top: 162px; */
+    top: 12.2%;
 }
 
-.sm_circle--second {
-    top: 285px;
+.second_year {
+    /* top: 285px; */
+    top: 21.4%;
 }
 
-.sm_circle--third {
-    top: 758px;
+.third_year {
+    /* top: 528px; */
+    top: 39.7%;
 }
 
-.lg_circle--first {
-    top: 528px;
+.fourth_year {
+    /* top: 758px; */
+    top: 56.9%;
 }
+
 
 .vertical_line {
     content: "";
@@ -239,20 +244,53 @@ h1, h2, h3, h4, h5, h6 {
 .about_us_info {
     max-width: 400px;
     position: absolute;
+    transform: translateX(-50%);
+}
+
+
+.about_us_info--left {
+    left: 33%;
+}
+
+.about_us_info--right {
+    left: 67%;
 }
 
 .about_us_info_year {
     display: flex;
-    justify-content: end;
     color: #fff;
     font-size: 48px;
     font-family: 'Roboto';
+    font-weight: 300;
     line-height: .8;
+}
+
+.about_us_info_year--left {
+    justify-content: end;
     margin-right: 40px;
+}
+
+.about_us_info_year--right {
+    justify-content: start;
 }
 
 .about_us_info_title {
     color: #b7b7b7;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
+}
+
+.about_us_buildings {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about_us_buildings--black {
+    bottom: 20px;
+}
+
+.about_us_buildings--white {
+    bottom: 0;
 }
