@@ -334,13 +334,45 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.team-info__person-photo {
+.team-info__person:first-child, .team-info__person:last-child {
+    margin-top: 90px;
+}
+
+.team-info__person__photo {
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 0 auto 20px;
+    margin: 0 auto 35px;
 }
-/* 
-.team_info_person_name {
 
-} */
+.team-info__person__name {
+    font-size: 24px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    line-height: .2;
+}
+
+.team-info__person__post {
+    font-size: 13px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: #b7b7b7;
+    line-height: .9;
+    margin-bottom: 16px;
+}
+
+.team-info__person__icons_icon {
+    font-size: 20px;
+    color: #e4e4e4;
+    margin-right: 12px;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+
+.team-info__person__icons_icon:last-child {
+    margin-right: 0;
+}
+
+.team-info__person__icons_icon:hover {
+    color: #181818;
+}
