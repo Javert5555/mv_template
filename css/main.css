@@ -49,14 +49,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 34px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    line-height: .9;
+    line-height: 1.1;
 }
 
 .section__header__text {
     font-size: 16px;
     font-family: 'Merriweather', serif;
     color: #989696;
-    line-height: .9;
+    line-height: 1.3;
     margin-top: 10px;
 }
 
@@ -96,6 +96,35 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.header__burger-menu {
+    display: none;
+}
+
+.header__burger-menu span, .header__burger-menu:after, .header__burger-menu:before {
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: #333333;
+    margin: 0 auto;
+    border-radius: 20%;
+}
+
+.header__burger-menu span {
+    top: 16px;
+}
+
+.header__burger-menu:after, .header__burger-menu:before {
+    content: "";
+}
+
+.header__burger-menu:after{
+    bottom: 5px;
+}
+
+.header__burger-menu:before {
+    top: 5px;
 }
 
 .header__inner {
@@ -284,7 +313,6 @@ h1, h2, h3, h4, h5, h6 {
     top: 56.9%;
 }
 
-
 .vertical-line {
     content: "";
     position: absolute;
@@ -298,13 +326,12 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateX(-50%);
 }
 
-
 .about-us__info_left {
     left: 33%;
 }
 
 .about-us__info_right {
-    left: 67%;
+    left: 68%;
 }
 
 .about-us__info__year {
@@ -388,7 +415,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .team-info__person__icons_icon {
-    font-size: 20px;
+    font-size: 24px;
     color: #e4e4e4;
     margin-right: 12px;
     text-decoration: none;
@@ -458,12 +485,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .services__providing__item__description {
+    margin: 0 auto;
     padding: 20px 30px 0;
     line-height: 1.3;
     font-size: 18px;
     font-family: 'Roboto';
     font-weight: 300;
-    color: #333333
+    color: #333333;
+    max-width: 400px;
 }
 
 /* blog */
@@ -509,6 +538,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
     text-transform: uppercase;
     text-decoration: none;
+    text-align: center;
     padding: 15px 30px;
     background-color: #fff;
     transform:translate(-50%, -50%);
@@ -622,4 +652,184 @@ textarea.send-message__input:-ms-input-placeholder {color: #b7b7b7;}
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+    /* about-us */
+
+    .about-us__info_left {
+        left: 30%;
+    }
+
+    .about-us__info_right {
+        left: 70%;
+    }
+    
+    .about-us__buildings_black {
+        bottom: 4px;
+    }
+
+
+}
+
+@media (max-width: 990px) {
+    /* about-us */
+
+    .vertical-line {
+        left: 75%;
+    }
+
+    .about-us__info_right, .about-us__info_left {
+        left: 48%;
+    }
+
+    .about-us__info__year_right{
+        justify-content: end;
+        margin-right: 40px;   
+    }
+}
+
+@media (max-width: 770px) {
+    /* header */
+
+    .header__burger-menu {
+        position: relative;
+        width: 40px; 
+        height: 35px;
+        display: block;
+        margin: 10px 0 0 10px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    /* section */
+
+    .section__header__title  {
+        font-size: 28px;
+    }
+
+    .section__header__text {
+        font-size: 14px;
+    }
+
+    .section__header_services {
+        padding: 50px 0;
+    }
+
+    .section_services {
+        padding-bottom: 0;
+    }
+
+    /* intro */
+
+    .intro__title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .intro__suptitle {
+        font-size: 14px;
+    }
+
+    /* about-us */
+
+    .vertical-line {
+        left: 85%;
+    }
+
+    .about-us__info_right, .about-us__info_left {
+        left: 45%;
+    }
+
+    /* team_info */
+
+    .team-info {
+        margin-top: 60px;
+        flex-direction: column;
+    }
+
+    .team-info__person, .team-info__person:last-child {
+        margin: 10px 0;
+    }
+
+    .team-info__person:first-child {
+        margin-top: 0;
+    }
+
+    .team-info__person__photo {
+        margin-bottom: 20px;
+    }
+
+    .team-info__person__post {
+        margin-bottom: 10px;
+    }
+
+    /* services */
+
+    .services__providing {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .services__providing__item {
+        max-width: 100%;
+    }
+
+    .services__providing__item__name {
+        font-size: 24px;
+    }
+
+    .services__providing__item__description {
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+    /* blog */
+
+    .blog {
+        height: 400px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    /* about-us */
+    
+    .about-us__info_right, .about-us__info_left {
+        left: 40%;
+    }
+
+    .about-us__info__year {
+        font-size: 32px;
+        line-height: .4;
+        margin-right: 20px;
+    }
+
+    .about-us__info__title {
+        font-size: 13px;
+        line-height: 1.3;
+    }
+    /* blog */
+
+    .blog {
+        height: 320px;
+    }
+
+    .blog__btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    /* contacts_us, footer */
+
+    .contacts {
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    .contacts__info {
+        margin-bottom: 30px;
+    }
 }
